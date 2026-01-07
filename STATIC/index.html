@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Blog Posts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pagination.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Latest Posts</h1>
+        <div class="lang-switch" role="tablist">
+            <button class="lang-btn active" data-lang="en" aria-selected="true">English</button>
+            <button class="lang-btn" data-lang="hi" aria-selected="false">हिन्दी</button>
+        </div>
+        <!-- Circle loader -->
+        <div id="loader" class="loader" aria-label="Loading" role="status"></div>
+        <p id="loader-text" class="loader-text" hidden>Please wait...</p>
+        <div id="posts" class="posts-grid" hidden></div>
+        <div id="pagination" class="pagination" hidden>
+            <button id="prevBtn" class="page-btn" disabled>Previous</button>
+            <span id="pageInfo"></span>
+            <button id="nextBtn" class="page-btn" disabled>Next</button>
+        </div>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>
