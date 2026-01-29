@@ -1,0 +1,2381 @@
+## ❓ Q&A Guide
+
+### Factual Questions
+
+**Q1:** What experience does Krishna have as a front-end developer?
+**A:** Krishna has one year and ten months of experience as a front-end developer working with React and JavaScript.
+
+**Q2:** Which library does Krishna use for CSS in his current project?
+**A:** Krishna uses Tailwind CSS.
+
+**Q3:** What is the current version of React Krishna is using in his project?
+**A:** Krishna is using React version 17.
+
+**Q4:** What features were introduced in React 19 according to Krishna?
+**A:** React 19 introduced features such as concurrent rendering, server-side rendering, and new hooks.
+
+### Conceptual Questions
+
+**Q5:** What is the difference between section, article, and div tags in semantic HTML?
+**A:** Section and article are semantic HTML tags used for SEO purposes, while div is a non-semantic tag used for bundling elements together. Semantic tags help in better structuring of the web page content.
+
+**Q6:** Explain the concept of reflow and repaint in a browser.
+**A:** Reflow is the process of recalculating the positions and sizes of elements in the browser. Repaint is the process of redrawing the elements on the screen, typically when styles like color change.
+
+**Q7:** What are local storage, session storage, and cookies, and what are their differences?
+**A:** Local storage can store data up to 5MB and persists even after closing the browser. Session storage also stores data up to 5MB but expires when the tab is closed. Cookies store small amounts of data which are sent to the server with each request and can have an expiration date.
+
+**Q8:** What is the role of the event loop in JavaScript?
+**A:** The event loop allows JavaScript to perform asynchronous tasks by handling events and executing code in a non-blocking manner. It ensures that the call stack is empty before executing tasks from the task queue, giving priority to microtasks over macrotasks.
+
+### Analytical Questions
+
+**Q9:** How would you handle state management in a React application, and what tools could you use?
+**A:** State management in a React application can be handled using tools like Redux and Context API. Redux is a library that provides a centralized store for state management and uses actions and reducers to update the state. Context API is a React feature that allows passing data through the component tree without prop drilling.
+
+**Q10:** What are the benefits and drawbacks of using functional components over class components in React?
+**A:** Functional components are more readable and easier to maintain due to their simpler syntax and the use of hooks. They avoid the complexity of class components. However, class components have built-in lifecycle methods which can sometimes make handling certain scenarios more straightforward, although hooks like `useEffect` can achieve the same in functional components.
+
+**Q11:** Describe how you would optimize the performance of a React application using lazy loading and code splitting.
+**A:** Lazy loading and code splitting can optimize a React application's performance by breaking the application into smaller chunks that are loaded on demand. Lazy loading can delay the loading of non-critical components until they are needed, improving initial load time. Code splitting can be done using tools like Webpack to split the code into smaller bundles that can be dynamically loaded as required.
+
+**Q12:** Explain how you would remove duplicate values from an array in JavaScript.
+**A:** Duplicate values can be removed from an array using the `Set` object, which only stores unique values. For example, `const uniqueArray = [...new Set(array)]` will create a new array with duplicates removed. Alternatively, methods like `filter` can also be used to achieve this.
+
+
+
+
+00:00 Hi Krishna, how are you?
+00:01 >> Yeah, fine. Uh fine. Moit. Yeah, what
+00:04 about you?
+00:04 >> I'm also good. Thank you for joining on
+00:06 time. Krishna.
+00:08 >> Okay. Uh so Krishna in this interview uh
+00:11 we can start with HTML CSS first then we
+00:14 will move to the JavaScript and then
+00:16 react part.
+00:17 >> Yeah sure.
+00:18 >> Uh so start with the introduction.
+00:20 What's your uh current experience? How
+00:22 much uh do you have any experience?
+00:24 What's your education background? What
+00:26 you do today?
+00:27 >> Sure.
+00:27 >> Like this please.
+00:28 >> Oh okay. Yeah, currently I have one year
+00:30 10 months of experience as a front end
+00:34 working on react and javascript for
+00:36 management redux I'm using. So I did my
+00:39 beon computer applications uh through
+00:40 college I placed uh so I joined
+00:43 initially as a intern. So now I was a
+00:46 junior developer junior front end
+00:47 developer I trained as a front end and
+00:49 react and in company itself. So they
+00:51 trained on me. Yeah. Now working on a
+00:53 project called aim project that is
+00:55 e-commerce project. So client is eBay I
+00:58 mean Kmart.
+00:59 >> So yeah my roles and responsibilities
+01:00 include like of integrating APIs and
+01:05 building responsive
+01:07 components so on. Yeah that is basic
+01:09 introduction about me.
+01:11 >> Any framework and library you are using
+01:13 for CSS?
+01:14 >> Tilewind. I mostly used Tailwind.
+01:16 >> Okay. Tailwind. You have a knowledge in
+01:18 Tailwind.
+01:19 >> Yeah.
+01:19 >> Okay. What about the simple CSS? Do you
+01:21 have any knowledge like
+01:23 >> Oh yeah, b b b b b b b b b b b b b b b b
+01:24 b b b b b b b b b b b b b b b b b b b b
+01:25 b b b basic knowledge and simple CSS for
+01:27 interview purpose and I I have some
+01:28 knowledge on CSS.
+01:29 >> Yes, that's good. And uh which React
+01:32 version you are using in current
+01:34 project?
+01:35 >> 17.
+01:36 >> Okay, 17. You are in 17. And what what's
+01:39 about the current version? Do you have
+01:40 any knowledge?
+01:41 >> Yeah, React 19. I think uh they
+01:43 introduced coent rendering and server
+01:46 side rendering some features and some
+01:48 hooks has been introduced. I think React
+01:50 19.
+01:51 >> Yes, multiple multiple new are also
+01:53 introduced in React 19.
+01:54 >> Uh
+01:56 >> okay, that's good. Uh so start with HTML
+01:58 and CSS first. Uh yeah,
+02:00 >> so uh the first question is what's the
+02:02 difference between section, article and
+02:04 div in cementing HTML?
+02:06 >> Uh section and article are semantic
+02:09 tags. Due is not a semantic tag. So it
+02:12 is a block line block element.
+02:14 The difference is like section section
+02:16 and article used for SEO purpose mostly.
+02:20 So while building the components
+02:24 >> yeah and do is for like bundling the all
+02:28 elements together.
+02:30 So that is the basic difference between
+02:32 them I think as
+02:33 >> that's a trick that's a tricky question
+02:35 actually I told section article and div
+02:38 in semantic HTML you aware about div is
+02:41 not in semantic HTML section and article
+02:44 is semantic
+02:45 >> HTML that's what I told div is not a
+02:47 semantic element the section and article
+02:49 and figure these are the semantic
+02:51 elements these both are used for SEO
+02:54 purpose
+02:55 >> yes correct what are the uh reflow and
+02:58 repaint in browser
+03:02 refflow and repaint just just try try
+03:05 out what is it uh it's a basic and basic
+03:08 thing in browser whenever you use CSS
+03:12 it's a basic thing refflow repaint
+03:16 what about the meaning repaint just
+03:18 think about it repaint means like
+03:20 painting repaint
+03:23 >> okay that what is fine but the that
+03:26 definition I'm not getting like I'm
+03:28 hearing that this question is first time
+03:31 >> actually reflow means recalculate of
+03:34 element position and size correct and
+03:38 repaint meth means redraw of element uh
+03:42 style like color okay okay
+03:45 >> okay
+03:46 >> that's uh thing okay can you share your
+03:49 screen so I have one option based
+03:52 question so I I want to ask
+03:54 >> yes is it visible open any editor uh
+03:57 like And okay, that's good. Okay. Uh I'm
+04:01 asking. Okay. Just one second. I just
+04:04 copy.
+04:05 >> Yeah, sure.
+04:06 >> Okay.
+04:09 I'll paste it on chat. Can check the
+04:11 chat.
+04:18 What's the output?
+04:20 >> If you want, you can copy it and paste
+04:22 it on your editor.
+04:29 Yeah. What's output are generally what
+04:31 do you think?
+04:34 >> Can you increase the size? Uh can you
+04:36 increase the size of uh uh one more but
+04:40 that's fine.
+04:41 >> Yeah sure. Uh basically as per hierarchy
+04:45 >> Mhm.
+04:46 >> the ID is first priority.
+04:50 >> Mhm.
+04:51 >> Okay. As ID in the sense the option will
+04:54 be red I think.
+04:57 Why? Because of ID.
+05:01 >> Yeah. As for hierarchy, ID is first
+05:03 inline CSS, then ID, then class. Oh, I
+05:06 think. Yeah, this is the hierarchy.
+05:08 >> Yes. Uh, hierarchy is correct. Uh,
+05:11 >> so output is final red.
+05:13 >> Yeah, red. Red one. This one.
+05:15 >> Yes, that's correct. That's correct.
+05:17 >> Okay.
+05:18 >> Okay. Uh, the next question is uh what
+05:21 are the use of uh meta character set
+05:24 use? You heard about it? HTML.
+05:27 >> Yeah. Yeah. Meta text basically it will
+05:29 contain
+05:30 no meta metadata about the HTML
+05:33 document. Example character test UTF8
+05:36 character test uh and
+05:39 document view port view port and all or
+05:42 it will contain all these attributes and
+05:45 elements.
+05:46 >> What is what is it? UTF8
+05:49 UTF it is a character set which defines
+05:52 what we're writing the characters. So
+05:54 that will define that character of 8 in
+05:56 the sense that character I think that is
+05:58 the definition I think. Yes
+06:01 that that that encoding characters uh
+06:03 that they they understand in the
+06:05 characters uh whatever that we write in
+06:08 English they
+06:11 >> okay that is correct definition correct
+06:12 >> yes that's defin
+06:14 uh what's the difference between local
+06:16 storage session storage and cookies
+06:19 >> okay uh the three are web APS so it will
+06:24 store in not cost stack it will store in
+06:26 web APS see local storage is basically a
+06:28 storage till 5 MB
+06:31 >> 5 MB so it will uh it won't expire even
+06:36 after closing the tabs for session uh
+06:38 session storage will expire after
+06:40 closing the tab itself and cookies will
+06:44 uh send the uh some some data to uh as a
+06:48 request to the h as a backend server I
+06:52 think cookies
+06:53 >> yeah this is the difference correct
+06:55 right
+06:56 >> yes correct uh so which one is more
+06:58 secure. Any idea?
+07:00 >> Oh, secure.
+07:02 >> If if we if we use local storage, you
+07:05 can just uh right click and inspect
+07:07 something.
+07:08 >> So, you can easily to check the local
+07:10 storage things.
+07:12 >> That's that is the term if it if you use
+07:16 uh username and password in local
+07:18 storage. So, anyone can get uh that
+07:21 password to local storage.
+07:23 >> Exactly. Exactly. That's what it's
+07:25 better to use
+07:26 >> session storage I think.
+07:29 >> Uh cookies uh
+07:30 >> cookies also I think. Yeah but yeah
+07:33 cookies I think. Yeah yeah cookies is
+07:34 better but I didn't use I used the
+07:36 session and local. Oh I think
+07:38 >> okay you use both uh in your e-commerce
+07:41 project.
+07:42 >> Yeah
+07:43 as for senior developers used. Yeah.
+07:46 >> Okay. They are they are asking to use
+07:48 it.
+07:49 >> Yeah. So any any difference uh which
+07:51 type of condition you are use local
+07:53 storage which condition you are using
+07:55 self storage
+07:57 >> conditions like set item and all right.
+08:00 >> Mhm.
+08:01 >> Yeah. For for password in for password
+08:04 uh with the password login details and
+08:06 authorization purpose also I used it
+08:08 that one.
+08:08 >> Okay. Got it.
+08:09 >> Yeah.
+08:10 >> Okay. Next question is why is Jed index?
+08:13 What is Jed index and why is it used?
+08:16 Oh J index
+08:19 actually
+08:21 so it it will work for position relative
+08:26 and absolute absolute and static.
+08:29 >> Mhm.
+08:30 >> So it is used for
+08:32 hide the some element from the UI.
+08:37 >> Okay.
+08:39 >> Yeah.
+08:42 >> Okay. It's uh it's something like
+08:44 overlay overlay between
+08:46 >> overlay overlay. Yes. Yes. Exactly.
+08:49 >> And what's the difference between flux
+08:50 fox and grid?
+08:53 >> Both are useful for layout design. Uh
+08:55 that this is for single layout design
+08:57 that is for multi-layer design. Yeah. Uh
+08:59 the basically the flexbox will use for
+09:02 single layout design. So it will display
+09:04 the elements in cross-axis and main
+09:06 axis. If you want to display the
+09:08 elements in all across all sizes at
+09:10 once, so we'll use grid grid layout. It
+09:13 is multi-layer design.
+09:16 >> Okay.
+09:16 >> Yeah.
+09:17 >> So, which one is single layer your which
+09:19 one is 2D? We said 2D is the grid. 2D
+09:23 single one is one layer design is this
+09:25 one flex flex box. So, that is 2D design
+09:28 grid
+09:29 >> multilayer. Uh yeah, we can use multiple
+09:32 elements. We can position the all
+09:33 elements at once. But in display flex we
+09:36 can you know we can align the elements
+09:39 cross-axis or
+09:42 x-axis and all but that one we can
+09:45 access the all elements at once in
+09:47 position some position.
+09:49 >> Okay.
+09:50 >> Yeah. Okay. Okay. That's fine. Uh for
+09:53 HTML CSS we can move to the JavaScript
+09:55 part.
+09:56 >> Yeah.
+09:57 >> Okay. What's the difference between let
+09:59 where and cost?
+10:00 >> Yeah. Let let const are introduced in
+10:04 JSX feature where is basically a global
+10:08 scope and in function it is function
+10:10 scope. It is variable is hosted and
+10:12 redeclared also and and reassignment
+10:14 also allowed for latent cons also hosted
+10:17 in not in
+10:20 current but it will hosted in the
+10:22 temporal dead zone. Temporal dead zone
+10:24 inense it is a time between declaration
+10:26 and the installation time. So that
+10:28 that's why we'll get uh reference error
+10:30 if we try to access the that variable
+10:35 before the uh declaration we'll get
+10:37 error reference error. So for hosting
+10:40 this one where will we will give as a
+10:42 undefined because it is completely
+10:44 hosted and basically the variable
+10:46 declarations are hosted not the
+10:48 installations. Yeah, this is the uh
+10:50 difference between three of them and let
+10:52 we can reassign the value and reassign
+10:56 the value redclare is not possible. Con
+10:58 is completely immutable. So we can't
+11:00 change and modify the value inside the
+11:03 con. It is it's better to use const.
+11:06 Yeah. In better to use con for project.
+11:10 Yeah.
+11:10 >> Okay. Uh you know where is the global
+11:12 scope?
+11:14 >> Yeah, it is where where is a global
+11:16 scope in function? It is function scope.
+11:18 Okay. So why is it global scope? My
+11:21 question is
+11:22 >> oh why in the sense like
+11:26 >> any example uh what is global scope
+11:29 means?
+11:30 >> Uh global scope in the sense we can
+11:32 access the values anywhere anywhere in
+11:35 the code. So that is called global
+11:37 scope. So for example we have where a
+11:40 equal to 10 we can access that in
+11:41 function inside function and outside the
+11:43 function as well.
+11:44 >> So that is called global scope. Yeah.
+11:47 Okay, got it. Uh, what is event loop?
+11:51 Uh,
+11:51 >> event loop. Okay. Uh, event loop is a
+11:54 specific feature
+11:56 in JavaScript. So, it is used for
+11:58 performing asynchronous tasks like
+12:00 fetching APIs and all.
+12:04 Uh, there are specific feature in event
+12:06 loop.
+12:08 First there is call stock. Call is it
+12:10 will follow the principle called lost in
+12:12 first out. the whichever we are writing
+12:15 the code in IDE like code we are writing
+12:18 in JavaScript so it will first store in
+12:21 call stack so we are defining for we
+12:23 declare the function first it will store
+12:24 in call stack so then if there any set
+12:28 timeouts and all and AP calls and all it
+12:31 will show in web APIs so and there is a
+12:34 task Q so two tasks micro task Q and
+12:37 macro task Q so the priority is first m
+12:41 macro sorry micro task Q That means the
+12:43 promiser will execute first then it will
+12:46 execute timers and all that means macro
+12:48 task. So the web first it will store the
+12:51 all web APIs in sorry all time set
+12:54 timers and web APIs. It won't execute
+12:56 the until the call stock is empty. If
+12:58 the call stock is empty then it will
+13:00 event loop will trigger the uh uh event
+13:04 then it will it will get the all value
+13:07 it will push the micro task Q2 and
+13:09 micros Q2 and stock call stack. So then
+13:12 it will perform the operation.
+13:14 >> Any example in your mind?
+13:16 >> So example in like for example we have a
+13:19 function we have a function and we have
+13:22 a timeout and set time out and
+13:26 promises. So we have a resolve promise
+13:28 of promise console lock promise. If you
+13:31 want I can I will write the example.
+13:33 Yes.
+13:33 >> Yes. Yes please. That's
+16:02 Yeah. Uh this is the example. See, even
+16:05 though we called the function at the end
+16:07 of the uh timeout and web APIs and uh
+16:10 promises, but still it will execute the
+16:13 first because
+16:14 >> Yes.
+16:15 >> Yeah. because of the uh order uh cost if
+16:18 the function will go to call stock
+16:20 first.
+16:21 >> Mhm.
+16:22 >> Yeah. Then uh it will uh then it will
+16:26 check the set time then it will directly
+16:28 go to
+16:31 web API.
+16:32 >> Okay.
+16:33 >> Uh then then promise will go to directly
+16:35 go to this m sorry micro task micro task
+16:41 uh it will be first priority. It is
+16:43 first priority.
+16:46 first priority then yeah we are we are
+16:50 resolving the promise here. So first
+16:52 first execute the it will execute the
+16:55 function then it will execute the
+16:56 promise then it will execute the set
+16:58 amount at the end. Yeah, this is the
+17:00 example.
+17:01 >> Yes, correct. Okay, I have some output
+17:05 based question. So just give me I just
+17:08 paste it to you.
+17:10 Okay.
+17:16 >> Okay. What's the output?
+17:19 >> Oh,
+17:21 first answer will be A.
+17:23 >> Mhm.
+17:24 >> Yeah. First it will uh console log the
+17:26 A.
+17:27 >> Mhm.
+17:29 >> Uh then
+17:32 it will execute D.
+17:34 >> Mhm.
+17:40 Then we will get C here. So
+17:44 >> at the end the statement will execute
+17:46 because of that hierarchy. First it will
+17:48 go to call start then it will execute A
+17:50 then it will go to web APIs. Then it it
+17:52 will be there only until the time even
+17:55 though this 0 seconds it will still wait
+17:58 in the web API. So first it will resol
+18:00 resolve this promise. I mean first it
+18:02 will execute this promise. So then it
+18:04 will move to web API. I mean from micro
+18:07 to micro task.
+18:09 >> Yes. Uh the output is correct.
+18:12 >> Yeah.
+18:12 >> Okay. Uh I have one more question to
+18:14 you.
+18:15 >> Okay.
+18:20 What's the correct option? I just paste.
+18:26 >> Yeah, sure.
+18:29 >> What's the correct option?
+18:31 >> Okay. Okay. Just a second.
+18:35 Uh undefined. So we'll get because of uh
+18:40 hosting. So we'll get undefined. Uh see
+18:43 as I told this is global scope where is
+18:45 the global scope latent const are
+18:49 local scope. So that that those also
+18:52 hosted but in temporal deone this this
+18:55 will give undefined directly. So this is
+18:56 hosted but initialized as undefined
+18:59 only. If you access here means you will
+19:01 get answer as five.
+19:03 >> Yes. Uh yeah.
+19:04 >> Okay. Okay. Yes. Correct.
+19:07 >> Yeah.
+19:08 >> Okay. One more question. I have uh
+19:10 pasted on chat.
+19:13 Can you check? Uh I have just uh shared
+19:16 one more question too.
+19:17 >> Yeah.
+19:19 Okay. Okay.
+19:22 >> Am I audible? Fine. Any noise?
+19:25 >> No. No. No. Now fine. Now fine.
+19:26 >> Yes. Yes.
+19:29 What's the output?
+19:32 >> Oh, we'll get here uh the three uh three
+19:38 three times.
+19:40 >> Why?
+19:41 >> Oh, because uh where is global scope?
+19:45 So,
+19:47 >> while executing this loop, I mean while
+19:49 iterating this loop, so it will
+19:51 initialize as initially zero. So it will
+19:54 initially zero then
+19:57 >> this this set time out will take that
+20:02 value. So the v where is hence because
+20:05 of where I mean global scope it even
+20:09 though this will until this the set time
+20:11 will store in web.
+20:13 >> Mhm.
+20:14 >> There is a time because of 1 second. So
+20:16 hence it will store in set time web a.
+20:19 So until this uh the loop will uh that
+20:22 time it will loop is three. So hence the
+20:26 i take it as three. So then it will
+20:29 execute three times because of this
+20:31 where due to global scope.
+20:34 >> Okay. When we have let
+20:36 >> we'll get we'll get 0 1 2 3 we'll get
+20:38 directly 0 1 2 3 we can check also we'll
+20:41 get directly 0 1 2 3.
+20:43 >> Mhm.
+20:43 >> Mhm. And we have another option uh
+20:46 without let also so with the let we'll
+20:48 get uh so answer 012 012 with without
+20:53 let without where with with the help of
+20:55 where also we can execute 012 uh with
+20:57 the help of closers.
+20:59 >> Yes. Correct.
+21:00 >> Yeah.
+21:02 >> Yeah. Okay. One more question to you.
+21:04 >> Yeah.
+21:04 >> Just check
+21:11 remove everything.
+21:15 Okay.
+21:18 Okay.
+21:43 1 22 is in string or number.
+21:46 >> So it will be string only because here
+21:50 concatenation right it will be convert
+21:52 this number into string. So we have
+21:54 using one plus hence this is string.
+21:57 >> Okay. Okay.
+22:29 blue one.
+22:38 Yeah, this also 112 due to string
+22:42 version and
+22:44 okay
+22:46 basically uh this one I will explain
+22:48 like see uh uh a will there is a asky
+22:52 code for every character in code
+22:55 language for yeah a is I think small
+22:59 capital a is 64 this one 64 I think 64
+23:04 >> of 64
+23:07 I think minus minus will be string 64
+23:10 minus b is 65 this number I am not sure
+23:14 I don't know this is exactly correct or
+23:16 not uh number
+23:18 >> okay
+23:21 >> 4 - 65
+23:24 we'll get - one
+23:28 + 2
+23:32 uh minus
+23:34 12 in string
+23:37 >> you Mhm.
+23:39 >> Uh this one I'm not sure but I think as
+23:42 key value according it will connect
+23:44 while comparing sorry while performing
+23:47 arithmetic operations. So it will
+23:49 convert that a to
+23:52 >> that one I think a minus b. Okay. This
+23:54 one
+23:57 >> this one also
+24:01 same. I think this one also
+24:03 >> uh this one will be like place two and
+24:06 this one say
+24:12 >> okay okay okay you know okay now see
+24:14 according to board rule first will sub
+24:17 plus a place will be performed right
+24:19 okay okay yeah B + 2 will be
+24:26 B2
+24:31 the
+24:34 Oh
+24:36 >> then B2 is a one thing. If we put a
+24:40 minus B2 then that is not in number and
+24:44 that is not in Bmass. It's not a number.
+24:47 It's not a string.
+24:48 >> Okay. We'll get n
+24:52 >> okay.
+24:53 >> Uh nn right. I think uh it's not a
+24:56 number. This but then this is number.
+25:01 Not not a number converted into
+25:04 >> but two is string.
+25:06 >> Oh empty empty string right?
+25:09 >> Yes two is the string in this case
+25:12 >> two is string but I mean what about
+25:14 this? I think I heard about this one.
+25:18 >> Okay no problem you can run it that is
+25:22 much simple.
+25:26 >> N because of k the last one is a minus
+25:29 b. You are saying correctly
+25:32 >> uh that is uh string to number is not a
+25:34 number and the second last is uh two is
+25:38 uh is a string that's why they they
+25:40 paste it with n paste it with n2
+25:44 is the string
+25:45 >> okay
+25:46 >> you know that's the reason
+25:47 >> okay okay this will convert into n
+25:49 initially right
+25:50 >> yes not initially it's a d initially
+25:55 converted to n a minus b and then 2 is
+25:58 the n plus string two n2 and the second
+26:03 one is plus operator first if we plus
+26:06 operator first and b true if a minus b2
+26:09 so it will consider as n
+26:12 >> okay okay I mean uh I mean uh you mean
+26:14 I'm not wrong right I mean ask value and
+26:17 all
+26:18 >> yeah that is ask value is not required
+26:20 there
+26:21 >> okay okay then everything is good and
+26:24 other question is yours is 12 you said
+26:27 12 uh for the Third one.
+26:31 Third one means uh it will not 12
+26:35 actually. U 1 + -1 is considered as a
+26:39 zero.
+26:41 >> Okay. 1 + - 1. Okay.
+26:43 >> Mhm. Okay. No problem.
+26:45 >> Uh I have one more question to you.
+26:47 What's the output is there?
+26:58 >> Oh. Oh, this is basically a closure I
+27:02 think. Yeah, this is closure.
+27:05 >> That is the concept of closer there.
+27:08 There is use
+27:09 >> uh I think this this function is a
+27:11 closer itself because the this is parent
+27:14 variable and this is the inner function.
+27:17 Oh, wait. Answer will be
+27:24 101.
+27:31 Okay. Place
+27:34 in here is zero.
+27:37 >> Mhm.
+27:40 one
+27:49 zero then it will run this one.
+27:52 >> Mhm.
+27:55 >> Why zero? Uh my question is
+27:58 >> oh because this is pre-increment. So in
+28:02 uh
+28:04 first it will after doing after
+28:06 performing this uh operation then it
+28:10 will uh still won't go to the uh next I
+28:15 mean uh next number so it will be on the
+28:18 uh zero itself because after calling the
+28:21 uh
+28:23 >> are you sure actually it's if it is
+28:25 count + one count plus one then it will
+28:28 be zero if plus count I I don't think it
+28:32 will be.
+28:34 >> Oh, think about it.
+28:38 >> Okay. Okay. Okay. Okay.
+28:44 >> Uh 1 2 3 then.
+28:47 >> Yeah, that's correct. Can you run it?
+28:49 Even I have some mistake. Let me check.
+28:53 >> Yes, correct.
+28:55 Okay. Okay. Okay. Okay. One more
+28:58 question to you. Uh just check it out.
+29:07 What's the output?
+29:12 >> I will save I will save this one
+29:14 >> so that
+29:17 no everything I will uh share it to you
+29:19 after this interview.
+29:22 >> Okay. Okay then fine.
+29:28 >> This is the question right? Okay. Yes, I
+29:31 want the output.
+29:33 Um or the initially it will will get
+29:36 start
+29:38 then promise this is zero then
+29:41 >> it will give end uh due to web ps
+29:47 then it will go then it will resolve the
+29:49 promise will get promise.
+29:53 >> Mhm.
+29:57 >> Then at the end it will give time out.
+30:00 Yes, that concept is your correct is
+30:03 clear. I know that's correct. Okay, next
+30:07 question. The last version of JavaScript
+30:09 is there. Okay.
+30:19 Okay. This is spread operator. Okay.
+30:23 Straight operator.
+30:26 Um this will be
+30:37 six. Oh, this is the answer for that
+30:40 array. Then
+30:42 this will be
+30:46 okay. uh this will be like
+30:52 um
+30:54 we'll get like this I think hello in in
+30:58 array format we'll get like this
+31:01 >> yes uh that's correct
+31:04 >> okay
+31:05 >> okay uh theoretical part is uh can I ask
+31:10 logical question also in JavaScript if
+31:12 you are okay
+31:13 >> yeah fine nothing
+31:15 >> okay let me start uh the logical
+31:17 question. Okay, we have uh you need to
+31:20 remove the duplicate value from any
+31:23 array. How do you do it?
+31:26 >> Duplicate values. Yeah, I can I will
+31:30 write the code is
+31:31 >> yes I I need code how to remove the
+31:34 duplicate value.
+31:36 If you have any array like 1 22 33 3 4
+31:41 >> Okay, wait. I'll just uh
+31:57 So
+31:58 >> yes, this is fine. Yeah,
+31:59 >> that is fine.
+32:06 >> How can you do it without for loop? uh
+32:09 without for loop uh
+32:13 a filter we can use filter also
+32:16 >> okay
+32:16 >> with the yeah we can use filter um
+32:21 uh with the help of filter we'll check
+32:22 the index yeah with with the help of
+32:25 filter I think yeah that's that is
+32:26 another method and with the help of for
+32:28 loop and another method yeah that's it I
+32:30 know I think two
+32:31 >> you know set method set method
+32:34 >> sorry
+32:35 >> set method you know set method set
+32:37 >> okay that is predefined I mean we don't
+32:39 need to write code directly we'll get
+32:41 we'll give
+32:42 >> oh answer yeah
+32:44 >> yeah that is I just want to ask you know
+32:47 about it or not but you can continue
+32:48 with for loop no problem
+32:50 >> okay yeah new set this is the answer you
+32:52 can
+32:52 >> that is that is much simple
+32:54 >> yeah simple most most of the interviews
+32:57 they won't ask this one right that's why
+32:58 I thought okay
+32:59 >> actually the fresher level or one year
+33:01 plus experience level generally they are
+33:04 using this method
+33:05 >> okay
+33:06 >> that's why I'm thinking Okay. Okay.
+33:29 >> Your house is near to airport. I think.
+33:33 >> Yes. Bangalore HL airport.
+33:35 >> Okay. You are near to Bangalore airport.
+33:38 >> Oh, it's nearby only. That's why.
+33:40 >> Yeah, that's the reason.
+33:56 [Music]
+34:12 [Music]
+34:39 Yeah. Yes. Correct. Uh one more question
+34:42 I have to you. Uh if you have any array
+34:45 nested array like for example one two
+34:48 then nested one two then nested one two
+34:51 I want to flatten that array. Uh so how
+34:54 do you do?
+34:55 >> Yes sure.
+35:06 First I will create a sample nested
+35:09 array so that
+35:11 >> okay
+35:14 three time nested.
+35:22 >> Oh this is fine.
+35:23 >> Yeah that's good. That's good. I want to
+35:25 flatten that area.
+35:27 >> Okay. Uh there is two ways to flat the
+35:29 array. One method is
+35:31 >> going to use flat method.
+35:33 >> Yeah. One is flat method. We can use a
+35:35 predefined I mean we'll write direct
+35:37 polyfield for flat directly. So with the
+35:42 flat method we will direct flat method
+35:43 we will just we'll flat the array
+35:47 >> nor normal one it will contain like
+35:51 numbers like for example there is
+35:53 multiple flat uh inside multiple arrays.
+35:56 So ne will give numbers in flat but we
+35:59 can create a paul field for direct
+36:02 flattening the array. So I will give
+36:03 flat I will write
+36:05 >> but oneplus experienced person they will
+36:07 have a flat array knowledge that is also
+36:10 okay and set method is also okay but no
+36:14 problem.
+36:15 >> Okay if you want I write that flat also
+36:17 that is simple.
+36:19 >> That is more that is more simple you can
+36:21 continue whatever you are doing right
+36:24 now.
+36:24 >> Okay. Okay. Mhm.
+36:26 >> Can I write this? Uh
+36:27 >> yes, that is a function itself.
+37:21 Is it okay?
+37:29 Oh, okay.
+38:16 We'll use recussion here like because uh
+38:19 if if this is array so if it comes with
+38:22 this element if this is array so we'll
+38:24 you will again run the code from this
+38:27 element in the new array. So that's why
+38:29 I used recussion then
+38:34 >> so if that is array so that we will use
+38:36 recussion then if not array uh we'll
+38:39 directly push the elements into new new
+38:42 flatten array result.
+38:43 >> Okay. Oh.
+38:49 Oh, I can hear.
+39:11 Sorry, we don't need to return here
+39:13 because that is global. Then we'll
+39:16 directly console lock.
+39:27 So can I run the code?
+39:28 >> Yes. Yes, you can.
+39:32 >> I think it will. Okay. There is bug.
+39:35 Okay.
+39:46 It's okay.
+39:47 >> I
+39:55 Yeah.
+39:57 >> Yeah. Fine.
+39:59 >> Yeah. 1 2 3
+40:01 >> 6 7.
+40:03 Yeah, that's correct.
+40:06 Okay. Let uh me move to the react part.
+40:09 Do you have any uh uh knowledge of
+40:12 nextjs also or it's uh react itself?
+40:15 >> Oh no I don't have knowledge on nextjs
+40:17 currently I'm planning to learn because
+40:19 nowadays they are expecting nextjs. So
+40:21 because of that server side rendering
+40:23 and static site generation I think.
+40:25 >> Yeah I'm planning to learn. Mhm. No
+40:27 problem. You can um in next I think two
+40:31 three after 2 month I will also start uh
+40:33 next year series in my YouTube channel
+40:35 itself. If you are checking
+40:37 >> okay then then start that is fine right
+40:39 even I am planning to learn so that I
+40:41 will learn. So
+40:42 >> okay start but in in my channel I have
+40:44 doing in Hindi language. Are you able to
+40:46 >> I can understand I will understand Hindi
+40:48 but I can't speak but I will understand
+40:50 Hindi.
+40:51 >> Yeah no problem. I have already created
+40:53 React Python. Yeah, I saw yeah I saw
+40:56 Python and I even I'm planning to like
+40:58 learn back end as well but currently no
+41:01 there is no time. I'm planning to I mean
+41:03 I'm currently preparing for interviews.
+41:05 >> So
+41:06 >> firstly firstly the React 20 is coming
+41:09 in November you know React 20 version is
+41:12 coming on next November. So I will start
+41:15 the next react 20 react 20 in between
+41:19 react 20 I will start next year itself
+41:21 in the same series that much be more
+41:24 valuable for others actually the next
+41:26 that react 20 version is most uh
+41:29 comfortable version even multiple
+41:32 changes are there in react in react 20
+41:34 that's why I am taking as a react 20 as
+41:37 a
+41:38 >> okay
+41:38 >> series to combine with uh next year
+41:41 combine with next year
+41:43 >> and another thing From my end there is
+41:45 suggestion if you want I will tell at
+41:47 the end I because see
+41:49 >> you can combine the all interview
+41:50 questions and then make the video that
+41:52 will be helpful to many people.
+41:54 >> That is that is already I did I have
+41:57 created three video uh no three uh
+42:00 itself my itself video I have already
+42:02 discussed itself my itself only I have
+42:05 prepared 150 questions uh video in react
+42:10 itself. I mean I mean JavaScript I mean
+42:13 >> okay you are asking JavaScript output
+42:15 based
+42:15 >> output based question that's what I mean
+42:17 >> uh that is also I planning to start a
+42:19 DSA series you know DSA
+42:21 >> DSA okay
+42:22 >> DSA algorithm series so that will they
+42:25 will cover everything for JavaScript
+42:27 that is that is DSA series is just like
+42:30 a Amazon and Google label questions I am
+42:33 preparing there
+42:34 >> okay that is like LinkedIn like LinkedIn
+42:37 trees structure STS
+42:41 graphs everything uh everything I will
+42:43 cover over there. So that is more
+42:45 advanced level series I am planning
+42:48 >> that is undergoing but I don't have much
+42:50 time so that's why things are doing this
+42:54 but no problem uh I have long-term goal
+42:58 within within this year within one year
+43:00 I have created multiple series I know
+43:03 100 plus language and everything. Okay,
+43:05 that's great.
+43:07 >> Actually, I'm a corporate trainer also.
+43:08 That's because of trainer something.
+43:11 >> Okay.
+43:11 >> Boot camp, you know, boot camp student
+43:14 when we hire in from college.
+43:16 >> So, I have given the training
+43:18 >> even some new language is coming in
+43:21 India for example then only the my
+43:24 responsibility to train everyone for
+43:26 that language. So that's the reason I
+43:28 have 100 plus language knowledge.
+43:31 >> Okay.
+43:32 >> Okay.
+43:33 >> Great. No issue
+43:34 >> nowadays that great
+43:36 >> actually that that is the requirement
+43:38 basis actually in my job I have a
+43:41 technical lead as of now in uh SCL but
+43:44 they move me to as a corporate trainer
+43:47 they move me intensely because I know
+43:50 multiple things so they are ask they are
+43:52 think they are saying don't do code
+43:55 train the train our students okay
+43:57 >> even I am also doing uh like freelancing
+44:00 for Infosys PCS Google
+44:04 >> for training training
+44:05 >> for training itself.
+44:07 >> Okay. Okay. Internal training right?
+44:08 >> Internal training in corporate in North
+44:11 India itself not not in south one
+44:15 >> but that's okay. Okay. Let me move to
+44:17 the VJS part.
+44:19 >> Uh what's the difference between class
+44:21 and function component? Have you worked
+44:23 class component firstly? That is
+44:25 >> no I didn't even return this syntax as
+44:28 well. So but so I have a difference for
+44:30 interview purpose like I mostly used it
+44:32 in functional component I started as
+44:33 functional components. So I trained in
+44:36 functional component itself directly
+44:38 because one and a half year back only.
+44:40 So I joined like as a fresher I joined
+44:42 >> as a fresh you you done functional
+44:45 component
+44:45 >> directly. Yeah.
+44:47 >> Okay. Yeah. Okay. What's the difference
+44:48 then?
+44:49 >> Uh difference is like uh functional
+44:52 components we have a hooks in class
+44:55 components we have like component did
+44:57 mount and life cycle methods. compared
+44:59 to class components the functional
+45:01 components is more readable compared to
+45:04 class because because of the complexity
+45:06 of code. So the there is a less comp
+45:09 less code in uh in functional components
+45:12 due to hooks in that
+45:15 uh function class components there are
+45:18 we should write I mean multi lines
+45:20 course and
+45:21 >> another thing like
+45:23 >> so you are saying uh the life cycle
+45:26 method is not used in functional
+45:27 component
+45:29 >> uh instead of that life cycle methods uh
+45:32 >> oh life cycle methods in the sense like
+45:34 that mounting unmounting this
+45:36 >> that is not That is not in use in
+45:38 function component. Are you sure?
+45:39 >> Yeah that that is we will use that that
+45:41 is updating mounting in
+45:43 >> that that word uh you are saying is that
+45:45 word is not used the concept is using in
+45:48 function component. How do you did
+45:50 component mount in function component
+45:52 then
+45:54 >> in
+45:55 with the help of updating state?
+45:58 >> No uh within used effect you have all
+46:01 three life cycle method you can use
+46:02 within use effect. Are you know
+46:06 >> okay actually there is three life cycle
+46:09 method is there in class component what
+46:11 is it
+46:12 >> mounting unmounting
+46:14 >> another thing is like
+46:15 >> component did mount component did update
+46:18 component and mount
+46:19 >> unmount unmount yeah
+46:20 >> okay all three are using in function
+46:23 component are you know
+46:25 >> yeah we are using with the help of hooks
+46:27 actually I didn't I didn't have
+46:29 knowledge on component mount and all
+46:30 class components hence uh with within
+46:34 use In fact if we give dependency array
+46:36 blank what is it?
+46:39 >> Oh blank dependency array if
+46:41 >> so it will run only once I mean it will
+46:43 render only once.
+46:44 >> So if empty array it will run every time
+46:47 with the with the dependency with the
+46:49 help of dependency array. So it will run
+46:52 only render whenever the state or props
+46:54 has been changed that particular
+46:56 >> if if we give any dependency array state
+46:59 if we give state as a dependency array
+47:01 what is it then?
+47:03 state in a sense like a state while
+47:05 updating the state right while while
+47:07 updating state then only the use effect
+47:09 is
+47:10 >> will run will run
+47:12 >> okay that is the called is component did
+47:14 update that is the component did update
+47:18 okay whenever you use uh return
+47:21 >> okay
+47:22 >> in the first dependency first uh
+47:24 argument
+47:25 >> within return within return whatever you
+47:27 do what is it
+47:30 >> uh I didn't
+47:30 >> have you used written have you used
+47:32 written inside use effect. Uh yeah
+47:35 return a clean for cleanup functions we
+47:37 will use right
+47:38 >> yeah that is component did unmount
+47:41 that is component
+47:42 >> clean function okay
+47:43 >> all three life cycle method in use use
+47:45 effect itself
+47:49 you just check after this interview you
+47:51 just check in internet how do you uh
+47:53 relate uh uh life cycle method in uh
+47:57 functional component then you will get
+47:58 more knowledge everything is used in
+48:00 functional component nothing is uh uh
+48:04 eliminate Nothing is terminate.
+48:06 Everything is used in function
+48:07 component. But function component gives
+48:09 our work easy. That is the way we are
+48:12 using function component itself.
+48:13 >> And another thing readability also right
+48:15 >> readability is is much uh new.
+48:17 >> Yes. And updating state also there is
+48:20 there is no hooks that it will I saw the
+48:22 code while updating counter counter code
+48:24 basic code that is I mean much complex
+48:26 class component we can't understand
+48:29 while seeing without knowing react we
+48:30 can't understand.
+48:31 >> Yes.
+48:32 >> But functional we can directly
+48:33 understand. Yes. Is the uh readable and
+48:36 maintainable also?
+48:37 >> Maintainable also. Yes.
+48:38 >> Okay. Okay.
+48:42 Okay. Uh the second uh Okay. The next
+48:45 question is what's the difference
+48:46 between
+48:48 uncontrol and control component.
+48:52 >> Okay. Uh control components in react is
+48:55 basically control with the we'll control
+48:57 the uh with the help of unchange method.
+48:59 Like for example forms we'll we'll
+49:01 control we first we'll declare the state
+49:04 then we'll control the with the help of
+49:05 unchange method that is called control
+49:07 component uncont control components uh
+49:10 is basically will access with the help
+49:12 of user ref hook
+49:15 >> dom and all dom elements and all will
+49:18 directly access the will prevent from
+49:21 unconditional
+49:23 rendering and all with the help of use
+49:24 that is called uncontrol components we
+49:27 can't control with this help of state
+49:28 directly you will control with the help
+49:29 of use with current target and also yeah
+49:34 >> you know DOM manipulation what is it
+49:36 >> yeah do manipulation is like updating
+49:38 the I mean uh rendering the all elements
+49:42 into DOM so
+49:45 that is uncontrol or control if we
+49:48 manipulate the dome
+49:51 DOM is controlled only like uh we'll
+49:54 update the state so it will update in
+49:55 DOM also right
+49:57 >> Mhm. Yeah.
+49:58 >> Are you sure
+50:00 dome manipulation is uh happen use ref
+50:04 or with the help of a state?
+50:07 >> Usre sorry with the help of usrep. Okay.
+50:10 Uh usere is used for to manipulate the
+50:12 dom only. DOM itself. Yeah.
+50:15 >> That's that's called an control
+50:17 component.
+50:17 >> Okay. Okay. Got it. Okay.
+50:19 >> Uh okay. Have you used Redux?
+50:21 >> Uh Redux I used it.
+50:23 >> What's uh explain the Redux architecture
+50:25 then?
+50:27 actually I didn't even revision but okay
+50:30 as much I know I will I will
+50:32 >> no no no problem if you don't know uh
+50:34 the confidence things uh so have you
+50:38 used redux toolkit also
+50:40 >> uh no no I didn't use it uh redux tool
+50:43 just I use it
+50:43 >> actually
+50:45 redux toolkit is more advanced than
+50:47 redux redux having most complex
+50:50 >> codeact redux toolkit is most simplest
+50:53 version of redux even React is also
+50:56 recommended to use Redux toolkit it not
+50:59 in Redux. Okay. What what about context
+51:02 API? What is it?
+51:03 >> Yeah, context API. It is it is basically
+51:07 to
+51:08 maintain the complex state management
+51:12 like for you state we will use for local
+51:15 component we will maintain the data
+51:17 local component. We want to send the the
+51:20 parent data to child and subchild. So
+51:22 that will be messy like it will be
+51:24 create prop drilling. It is called prop
+51:26 dealing. To avoid proping we'll use
+51:28 context API. So that means we we'll
+51:31 create the state in one file. We'll use
+51:33 the the code and data wherever we want
+51:37 in child components on. So that will be
+51:40 easy to you know use the wherever we
+51:43 want the code I mean data. So then no
+51:47 need to you know send pass the data from
+51:49 parent to chain. We'll directly take the
+51:51 data from parent then we'll pro uh we'll
+51:54 uh I mean I will send it through the
+51:57 provider then we'll uh get the data
+51:59 through the use context to
+52:01 >> okay
+52:03 >> so it is a state management tool or no
+52:07 >> it's not state uh it is for state
+52:09 management only it is not tool I mean
+52:11 redex is separate tool or it is library
+52:14 sorry redux is library it is separate
+52:16 yeah context API is includes the react
+52:19 feature It is react feature. That's it.
+52:21 Like that is also one feature. It's not
+52:23 library and tool. It's included.
+52:25 >> Yeah, it is react react feature.
+52:27 Correct.
+52:27 >> Yeah.
+52:28 >> Okay. The my last question is what is
+52:30 lazy loading and code splitting in
+52:32 React?
+52:33 >> Lazy loading and code splitting.
+52:36 >> Yeah. Uh code splitting is basically
+52:39 uh breaking the code into smaller
+52:42 chunks. Then we'll utilize the code
+52:43 wherever we want. That is called code
+52:45 splitting. Uh with the help of code
+52:47 splitting uh uh
+52:54 will optimize the performance. So that
+52:56 will be helpful in performance
+52:57 optimization. And lazy loading is
+53:00 basically uh uh we'll uh we'll lazy the
+53:05 component until the uh this for example
+53:08 we have a API fetching fetching the API
+53:11 component in some custom hook there is
+53:14 custom hook that is fetching the code
+53:17 from another component. So while
+53:19 importing that code in some parent
+53:21 component so that we'll use the lazy
+53:22 method so that until the core so we'll
+53:26 show the user with the uh some code like
+53:29 loading and all with the help of suspend
+53:31 >> so so that then we'll after getting the
+53:34 data from the API then we'll import that
+53:36 code then we will show the exact UI for
+53:38 example product while we will show
+53:40 products on until then we'll show the
+53:41 loading or processing or something
+53:44 >> yeah that is called lasing code
+53:46 difference both are for useful for per
+53:47 performance performance optimization
+53:48 only. So while I mean while fetching a
+53:51 complete data instead of fetching the
+53:53 data so we'll at least we'll will take
+53:56 some time to show the user through some
+53:58 know processing or uh waiting or
+54:02 something. So then we'll we show the UI
+54:05 so that will be easy to
+54:08 see and performance optimation also.
+54:09 Yeah.
+54:10 >> Then how do you handle error error
+54:12 boundaries?
+54:14 uh error boundaries uh sign I think I
+54:17 read about in class components I think
+54:19 we don't have in this functional
+54:20 components error boundaries uh errors
+54:24 will handle
+54:26 >> how you handle in your current project
+54:29 >> errors with help of yeah as a we use try
+54:31 catch method most currently mostly we
+54:34 use that only I read about in error
+54:36 boundaries that is used in class
+54:38 components I think we can't use the
+54:40 error boundaries in these functional
+54:41 components I think Yeah, we have we have
+54:44 lot of third party libraries are
+54:46 available in functional component. We
+54:48 can just uh insert it npm install error
+54:51 boundaries like this. So you can easily
+54:54 use that word in in term of error
+54:56 boundaries that is more easy in
+54:58 functional component.
+55:00 >> Okay.
+55:01 >> So lot of third party libraries are
+55:03 there not an inbuilt feature in function
+55:05 component but you can use third party
+55:07 library.
+55:08 >> Okay.
+55:09 >> Okay. No problem. That is more advanced.
+55:11 Uh I just asked
+55:13 Uh no try catch is fine. Everyone knows
+55:15 the tri catch.
+55:16 >> It is easy way easy way to handle
+55:18 errors.
+55:19 >> Uh multiple errors that is okay.
+55:21 >> Okay that's fine. Everything is good. Uh
+55:24 according to uh you are doing good. The
+55:27 knowledge is good. Just brush up some
+55:29 advanced things. Just learn something
+55:31 back end things. Just learn advanc
+55:33 reactux
+55:35 toolkit.
+
+
+
+
+
+## ❓ Q&A Guide
+
+### Factual Questions
+
+**Q1:** What is the primary specialization of Alam Pasha?
+**A:** Alam Pasha primarily specializes in JavaScript and React.
+
+**Q2:** What are some of the key responsibilities in Alam's recent role?
+**A:** Alam's key responsibilities include building UI components, styling them using React libraries, API integration, and deployments using CI/CD pipelines.
+
+**Q3:** What is the difference between local storage and session storage?
+**A:** Local storage persists data until explicitly deleted and is shared across different tabs within the same domain, whereas session storage only retains data for the duration of the page session and is cleared when the tab is closed.
+
+**Q4:** What are semantic tags in HTML? Give three examples.
+**A:** Semantic tags clearly describe the meaning of the content inside them, improving SEO and accessibility. Examples include `<section>`, `<article>`, and `<header>`.
+
+### Conceptual Questions
+
+**Q5:** What is event delegation in JavaScript?
+**A:** Event delegation is a technique where a single event listener is added to a parent element to manage events for multiple child elements through event propagation and bubbling up the DOM tree.
+
+**Q6:** Explain the difference between `var`, `let`, and `const` in JavaScript.
+**A:** `var` is function-scoped and can be redeclared and reassigned. `let` and `const` are block-scoped; `let` can be reassigned but not redeclared, while `const` cannot be reassigned or redeclared.
+
+**Q7:** What is the purpose of React hooks like `useState` and `useEffect`?
+**A:** `useState` is used for managing state in functional components, while `useEffect` is used for running side effects such as data fetching and DOM manipulation.
+
+**Q8:** What is the difference between controlled and uncontrolled components in React?
+**A:** Controlled components have their form data managed by React state, while uncontrolled components manage their form data directly through the DOM.
+
+### Analytical Questions
+
+**Q9:** How would you explain the concept of closure in JavaScript with an example?
+**A:** A closure occurs when an inner function has access to variables from an outer function even after the outer function has finished executing. For example:
+  ```javascript
+  function outerFunction() {
+    let outerVariable = 'I am outside!';
+    function innerFunction() {
+      console.log(outerVariable);
+    }
+    return innerFunction;
+  }
+  const closure = outerFunction();
+  closure(); // Logs: 'I am outside!'
+  ```
+
+**Q10:** How does the event loop work in JavaScript?
+**A:** The event loop manages asynchronous operations in JavaScript's single-threaded environment. It moves tasks from the task queue and microtask queue to the call stack for execution, ensuring non-blocking behavior.
+
+**Q11:** Why might you choose Redux over Context API for state management in React?
+**A:** Redux is preferred for larger, more complex applications because it provides a more structured approach to state management with actions, reducers, and a centralized store, whereas Context API is more suitable for simpler state sharing.
+
+**Q12:** How can you optimize the performance of a React application that handles a large amount of data?
+**A:** Performance can be optimized through techniques like pagination, infinite scrolling, and virtualization using libraries like `react-window` or `react-virtualized`.
+
+These questions provide a comprehensive assessment of Alam Pasha's technical skills and conceptual understanding, progressing from basic factual knowledge to more complex analytical thinking.
+
+
+
+00:00 Hi Alam, how are you?
+00:01 >> Hi. Hi m I'm good. How are you?
+00:04 >> I'm also good. Thank you. Thank you Alam
+00:05 for joining on time. So firstly
+00:08 introduce about yourself, your education
+00:09 background and all.
+00:11 >> Okay. So my name is Alam Pasha. Uh
+00:14 >> I'm I have completed my Btech from MJ
+00:17 College of Engineering. I'm a front- end
+00:20 developer with three years of
+00:21 experience.
+00:22 >> Mainly specializing in JavaScript and
+00:24 React. Okay. And uh I have a strong
+00:26 background in building and managing
+00:28 front- end applications optimizing them
+00:31 and u uh in my recent role I have
+00:34 contributed as a front-end developer uh
+00:37 working closely with uh different
+00:39 crossunctional teams and uh building
+00:42 scalable and high performance
+00:43 applications which are aligned with the
+00:45 business requirements. My work involves
+00:48 building UI components uh styling them
+00:51 and uh building them using React
+00:53 libraries. also do API integration and I
+00:56 also do uh deployments using CI/CD
+00:59 pipelines and u this is about my work
+01:03 and then uh I like about my achievements
+01:06 I have been uh recognized as a key
+01:08 contributor for three consecutive years
+01:10 and then I have been awarded as a
+01:13 problem solver badge from the technical
+01:15 architect of my project. These are about
+01:18 my achievements and the hobbies. I like
+01:20 to like uh play outdoor games and like
+01:24 music or some YouTube vlogs or videos.
+01:27 These are like my hobbies.
+01:28 >> Okay.
+01:30 >> Okay. Good. So, which kind of domain you
+01:32 are worked any specific domain or
+01:36 something else?
+01:37 >> Uh yeah, I have worked completely on
+01:39 react during my experience at my current
+01:42 organization. domain means like uh
+01:44 banking domain or any e-commerce domain
+01:46 something enterprise applications.
+01:49 >> Okay. You are in enterprise.
+01:52 >> Okay. And you have three year
+01:53 experience. All are in react.
+01:56 >> Yeah. All are in react.
+01:58 >> Okay. So
+01:59 >> first couple of months were like
+02:00 training and then my work actually
+02:02 started after.
+02:03 >> So so have you worked class component or
+02:06 you started your career in function
+02:08 itself?
+02:09 >> No no function only.
+02:11 >> Function only. Okay. In three years
+02:14 before the function component is most
+02:16 >> usable.
+02:18 >> Okay. Uh so we can start with HTML CSS
+02:21 first then we will move to JavaScript uh
+02:24 and then React. Okay. So what's the
+02:28 difference between HTML and HTML 5?
+02:31 and HTML 5 like HTML 5 we have more uh
+02:36 improved uh tags and then
+02:41 for HTML 5 more meta data can be
+02:44 integrated in that so that is the basic
+02:47 difference I don't know much about the
+02:49 difference
+02:50 >> no problem we using
+02:52 >> actually HTML 5 is the more SEO friendly
+02:57 in term of semantic tag they are using
+03:00 So the my next uh question is what is
+03:02 semantic tags? Give me some three
+03:04 example.
+03:06 >> Okay. Semantic tags are the tags which
+03:08 clearly describe the meaning of the
+03:10 content inside them. For example, we
+03:13 have section, article. Then we have
+03:15 header, footer, nav.
+03:17 >> And these tags improve SEO and
+03:20 accessibility. They make the code more
+03:22 maintainable and readable.
+03:24 >> Yes, correct. Okay. Uh what's the
+03:27 difference between inline inline block
+03:30 and block element in HTML?
+03:33 >> Okay. Okay. So these elements uh block
+03:35 element it takes the full width and it
+03:38 starts on a new line. Whereas inline it
+03:40 only takes uh the width which is
+03:43 required which is necessary for it and
+03:45 it doesn't start on a new line. Inline
+03:47 block it behaves like a inline but I
+03:50 think the height and width can be
+03:52 adjusted here for inline block.
+03:55 >> Okay. This is the basic difference.
+03:56 >> What are what about block
+04:00 >> block is the it starts on a new line. It
+04:02 takes the full width uh of that uh uh
+04:06 container. And suppose we have example
+04:08 like a div tag. It is a block element.
+04:11 It starts on a new line.
+04:13 >> Okay.
+04:13 >> For uh this inline we have a span tag.
+04:17 >> Okay. uh what's the difference between
+04:20 emm
+04:21 pixel and percentage in CSS units?
+04:26 >> Okay,
+04:26 >> so pixel is like fixed size. Suppose we
+04:29 give a size of 10 pixel, it is fixed
+04:32 across uh em it is like relative to its
+04:36 parents font size and then we have it is
+04:40 relative to the roots uh font size.
+04:43 percentage is like it is relative to the
+04:46 parents element size actually.
+04:49 >> Okay.
+04:51 Okay. So, okay, that's good. And what's
+04:54 the difference between local storage and
+04:56 session storage and cookies?
+04:59 >> Okay. local storage uh uh these all
+05:02 three are like browser web storage
+05:04 mechanism and in local storage uh all
+05:07 three like in local storage we store a
+05:09 string and it stays until we explicitly
+05:12 delete it. we need to go manually and
+05:14 then delete this. And it is uh whatever
+05:17 we store the data in local storage, it
+05:19 is shared across uh uh different tabs if
+05:22 they are using the same domain. Whereas
+05:24 session storage, it stays this data
+05:26 stays uh only until we have the live
+05:29 session. If the session or the tab is
+05:31 closed, this data is get clear. It
+05:34 clears automatically. Whereas cookie is
+05:36 like we can store small set of data
+05:38 which can we can send this over every
+05:41 HTTP request automatically we can it
+05:44 sends
+05:45 >> uh as you said all three are in browser
+05:48 related things.
+05:50 >> So
+05:51 >> so which uh uh are you sure cookies is
+05:53 on browser related thing or they can
+05:57 managing client itself all three
+05:59 >> from server? No no from server uh we can
+06:02 send the cookies as well.
+06:04 >> Okay. local storage and session storage
+06:05 or web stoages.
+06:07 >> Okay. So, which one is good if we build
+06:10 a secure uh website like banking domain?
+06:15 >> Uh-huh. So, it depends. So, like uh if
+06:18 we want to store a user preference or a
+06:21 theme maybe dark mode or light mode, we
+06:23 can use the local storage. Session
+06:25 storage we can like store use to store
+06:29 some temporary data like form data or
+06:31 something like that. uh cookies we can
+06:33 store to use to store this tokens.
+06:37 >> Is it good habit to
+06:38 >> tokens?
+06:39 >> Uh is it good? Uh we can do all three in
+06:43 same project. We can use all three in
+06:46 same project. Is it good practice?
+06:49 Um
+06:52 I'm not sure whether it is a good
+06:53 practice but uh it depends on our
+06:56 requirements because for simple uh theme
+07:00 team storage we can just use local
+07:02 storage. We don't need to store this in
+07:04 session or or the cookies or local
+07:08 storage is best for storing the theme.
+07:11 >> Okay. Okay. Good. Uh for example like
+07:16 >> Okay. Okay. Okay. Go ahead.
+07:18 >> Okay. For example, you have any image
+07:21 any image
+07:22 >> uh if you want to it converted as a
+07:25 responsive image which CSS you usually
+07:29 use
+07:31 for that we can have this max property
+07:35 max and then height we can give a give
+07:39 it in percentage or maybe auto set we
+07:42 can set it as auto then image will be
+07:44 responsive quite responsive
+07:47 Okay, that's a that's a good uh but any
+07:50 other way uh
+07:53 like any predefined method in CSS
+07:57 >> we can use media queries
+08:00 >> or object fit contain we can use to
+08:03 clearly display the images and media
+08:06 queries as well.
+08:07 >> Okay. So what's the difference between
+08:09 CSS grid and flex box?
+08:13 >> Okay, CSS these both are used to style
+08:15 the layouts. Uh whereas flexbox is like
+08:18 a one-dimensional layout either rows or
+08:20 columns. U main properties in flex are
+08:23 like display flex justify content flex
+08:26 direction align items. Flex can be used
+08:29 to like uh if we want to style an uh
+08:32 layout of of navigation bar where we
+08:35 have different elements we can style
+08:37 them horizontally or vertically. And
+08:39 then for grid uh it is a two-dimensional
+08:42 layout. We can move rows and columns
+08:44 both. And then we can use this grid for
+08:46 the complete layout of the uh web page.
+08:50 Or else we can uh have a container and
+08:53 uh suppose we are having a cards layout
+08:55 that we can have a container and use
+08:57 this grid property.
+08:59 >> Both are uh used for responsive design.
+09:02 >> Okay. Can you share your screen? I need
+09:05 to share one code. I want output of
+09:08 that. Entire screen Chrome tab
+09:13 used to Google Meet Teams.
+09:15 >> Yes. Yes.
+09:17 >> Able to click on Yeah.
+09:21 >> Is it visible?
+09:22 >> Yes, it is visible. Okay. Open any
+09:25 editor. Uh like uh one compiler is good
+09:29 according to
+09:32 uh one compiler
+09:33 >> one compiler is uh able to do in HTML,
+09:36 CSS and everything.
+09:40 Open it and close it. That small thing.
+09:44 Cross it. That is small window that is
+09:46 open. Yes. Okay. Open JavaScript or
+09:51 somewhere you can open JavaScript. No
+09:52 problem.
+09:54 >> Okay. Let me
+09:57 paste copy paste that code to you in
+10:00 chat box. Uh okay. I have shared one
+10:03 code to you. anyone.
+10:14 >> Yeah.
+10:15 >> Okay. Uh so I want to uh can you
+10:17 increase the font of your screen? Screen
+10:19 font is very small.
+10:22 More some more.
+10:24 >> One more. One more. Yeah, that's fine.
+10:27 Okay. Uh what's the output?
+10:31 >> Okay. We have a simple HTML and body
+10:36 print
+10:38 world w
+10:40 >> okay it's uh this paragraph replace with
+10:45 word are you saying what about the hello
+10:49 >> no no no no no this paragraph won't
+10:52 replace inside the paragraph it will
+10:54 print H1 world
+10:56 >> okay you said key hello and world both
+10:59 are print
+11:01 >> yeah Hello and world along with this uh
+11:04 angular braces.
+11:05 >> World is uh capital uh H1. H1 is also
+11:10 printed. You said
+11:12 >> no.
+11:14 >> No actually the world is print in H1 tag
+11:18 itself. Not H1 tag specific H1 tag is
+11:21 print. Is it inner HTML is
+11:25 okay no problem. One more question I
+11:28 have to you.
+11:30 Okay.
+11:40 If you change that uh JavaScript to HTML
+11:43 then it's you can run that code also. Uh
+11:46 can you
+11:48 that JavaScript to HTML
+11:53 search search HTML? Yeah, that one. And
+11:58 then uh paste uh my first code.
+12:02 My first code. Not that one. Not that
+12:05 one. First code. Then you can check uh
+12:07 the Okay.
+12:11 The world is uh doing it. Okay. And now
+12:15 the second question. What's the output?
+12:20 Is it very simple?
+12:28 Mhm.
+12:30 What is it?
+12:31 >> A check box. Check box. It will render a
+12:33 checkbox which is disabled.
+12:35 >> Okay. Yes. Correct. That is very very
+12:37 simple.
+12:39 >> Okay. And one more question I have.
+12:43 Yeah. This way.
+13:06 I'm not sure on this.
+13:11 >> Have you used all error?
+13:15 Um I have not uh used much.
+13:18 >> Okay, no problem. Then last question for
+13:22 you or HTML thing.
+13:29 Not that uh the blow. Yes.
+13:45 So text over me and when we hover over
+13:50 it, it will display tool tip.
+13:52 >> Yes. But it is not working in this
+13:54 browser. But don't run it. But your
+13:56 answer is correct.
+13:59 >> Okay. Okay.
+13:59 >> Uh okay. Uh let me move to the other
+14:03 one. Uh JavaScript part. So what's the
+14:08 difference between the small uh okay uh
+14:12 let me start with the JavaScript part.
+14:15 Uh start with the basic one. What's the
+14:17 difference between that where and cost?
+14:22 >> Const. Yeah. So all these three are used
+14:25 to declare variables. Uh whereas v is
+14:28 function scope latin const are block
+14:31 scope. Mhm.
+14:32 >> Uh and v can be redeclared in the same
+14:35 scope whereas let and const cannot be
+14:37 redeclared.
+14:38 V can be v and let can be reassigned.
+14:41 Const cannot be reassigned. Uh v is
+14:43 hoisted and it is initialized with
+14:46 undefined. Whereas let and con are also
+14:48 hoisted but uh they are not initialized
+14:51 with undefined. They are in temporal
+14:53 dead zone. So accessing them before
+14:55 initialization will give you a reference
+14:58 error.
+14:59 >> Okay that's correct. Okay. So, so which
+15:03 one is uh mostly you are using that or
+15:07 cost?
+15:10 The which scenario uh
+15:13 basically I want to know which scenario
+15:15 you are mostly used let which scenario
+15:17 you are mostly use const
+15:20 [Music]
+15:24 variable which we want to reassign. I'll
+15:26 use let uh for const I will use for
+15:29 declaring functions or objects where we
+15:32 can u uh like change the values of the
+15:36 object uh even if it is declared with
+15:38 con
+15:39 >> why where is not able to use mostly as
+15:42 of now any drawback specific drawback
+15:46 >> yeah yeah because it is function scoped
+15:48 uh it is very difficult to manage
+15:50 variables declared with v and after e6
+15:54 we have let con so We use the Latin con.
+15:56 >> No, management is very good. War is very
+15:59 good in term of management. I know I
+16:02 want to know basic uh why we are not in
+16:06 use.
+16:08 Have you worked uh have you know global
+16:10 scope something?
+16:12 >> Yeah.
+16:13 >> If you initialize something in where it
+16:16 will be uh it will be stored in browser
+16:20 global object. It will look like as a
+16:22 browser global object that can be stored
+16:25 permanently in browser itself. So it
+16:28 will give you that uh something that
+16:31 where is you can use anywhere in your
+16:33 component that as you said it's a
+16:34 functional scope. That's the reason
+16:37 where is uh not able to use mostly it
+16:40 will be stored internally in browser and
+16:43 that lat and cost is not initially
+16:46 stored within the dome itself.
+16:48 >> Okay.
+16:49 >> Okay. What about hosting in JavaScript?
+16:54 >> Yeah, hosting is like JavaScript's
+16:56 behavior of moving uh variables and
+16:58 function function declarations to the
+17:00 top of their scope during the creation
+17:03 phase of the execution context.
+17:06 >> Can you give me some example to share
+17:09 your screen to how the hosting is work?
+17:21 screen visible.
+17:22 >> Yeah.
+17:35 We have a
+17:38 [Music]
+17:40 need to add
+17:42 a value to. So when we try to
+17:47 console.log before it is initialized.
+17:51 Mhm.
+17:53 We will get the value of a as undefined.
+17:59 Whereas if we declare this variable
+18:01 using let it is hosted
+18:06 and it will like
+18:09 give you a reference since it is in
+18:11 temporal d.
+18:12 until the execution comes to this line
+18:15 the variable is not initialized using
+18:17 let so this will throw a refu
+18:20 >> okay what is event delegation
+18:24 >> event delegation uh is like a technique
+18:27 which we use to capture the events by
+18:29 attaching the event listener to the
+18:31 parent component suppose we have
+18:33 multiple child elements when we click on
+18:35 any child uh the event propagation
+18:38 happens and the event is bubbled up the
+18:40 DOM tree Using event delegation we
+18:44 attach this event listener to the parent
+18:46 component and capture this uh event.
+18:49 >> Okay. Give me any example in your mind
+18:52 if you have.
+18:55 >> Yeah. Suppose we have a div uh component
+18:57 and a a group of buttons maybe couple of
+19:01 buttons and clicking on any button we
+19:04 can attach an event listener on the
+19:06 parent div and then catch this event uh
+19:09 using the identifier. Okay.
+19:12 Okay. What are promises and asyncate?
+19:16 What's the difference?
+19:17 >> Yeah. Okay. Uh promises is like an
+19:21 object which uh represents the eventual
+19:23 completion of an asynchronous operation.
+19:26 It has uh three states mainly pending,
+19:30 fulfilled and rejected. Whereas async
+19:32 away it is uh just the syntactic sugar
+19:36 over promises. Behind the scenes it uses
+19:38 uh async this promises only. But uh this
+19:42 async aait uh by looking at async aait
+19:45 code if code is written in async aait it
+19:47 looks like a synchronous code but behind
+19:49 the scenes it uses these processes only.
+19:53 >> Okay. So if we have multiple API
+19:57 can we can we use same uh in sync away
+20:00 itself or we have some different method
+20:03 in promises.
+20:05 In promises uh we can chain them and
+20:08 also we have this uh promise methods
+20:11 promise.all promise dot raise promise
+20:14 dot any these methods you can use.
+20:17 >> Okay. Okay. What are closure and
+20:22 how it is used?
+20:25 Mhm. So closure in JavaScript uh is like
+20:28 uh it occurs when the inner function can
+20:31 access and remember variables from the
+20:33 outer function even after that function
+20:35 has finished execution. So this is used
+20:39 to the closures can be used for data
+20:41 privacy as well as uh maintain the
+20:44 state.
+20:45 >> Okay.
+20:46 >> This is a closure.
+20:48 >> Okay. What's the difference between
+20:50 debouncing and throttling?
+20:55 These are uh debounce throttling are
+20:58 techniques like uh for optimization. Uh
+21:01 debounce is like it triggers the
+21:04 function only after uh user stops for
+21:07 certain uh seconds a specified time
+21:10 interval. Whereas throttle it uh
+21:12 triggers the function after every uh
+21:16 specified time interval. Suppose we give
+21:18 1,000 milliseconds, it will trigger the
+21:20 function only after 1 second. Even if
+21:24 the
+21:25 uh user is doing events, user is doing
+21:28 activity between the time frame, it will
+21:30 not trigger the function. It will only
+21:32 trigger the function after that uh uh
+21:35 timer after that uh specified time
+21:38 interval.
+21:41 >> Yeah. Okay. Okay. You said event uh so I
+21:44 want to know how event do when call back
+21:47 uh call back stack is working.
+21:50 >> Call stack. Call stack. how event loop
+21:53 and call stack are working in
+21:54 JavaScript.
+21:56 >> Okay. Okay. So this is the mechanism.
+21:59 Event loop is like a mechanism by which
+22:02 JavaScript handles uh asynchronous
+22:04 operations in a single threaded
+22:06 environment. Since JavaScript is a
+22:08 single trigger.
+22:09 >> So what happens is we have a call stack.
+22:12 Uh we have a event loop. Suppose we have
+22:15 a piece of code uh where I can write
+22:18 some code. Mhm. Suppose we have r a = 10
+22:24 something like this.
+22:25 >> Mhm.
+22:26 >> And then we have a we'll just uh console
+22:29 log this.
+22:31 >> Mhm.
+22:34 [Music]
+22:40 >> We have a timeout.
+22:42 >> Mhm.
+22:44 And this function just simply
+22:48 console blocks
+22:55 string suppose time
+23:00 don't need a variable actually suppose
+23:02 in this we have a string.
+23:05 So when the u
+23:08 execution uh starts uh the execution
+23:11 context uh gets created
+23:14 >> and then uh this code is pushed to the
+23:16 call stack.
+23:18 >> Okay.
+23:19 >> So uh when we push this code to call
+23:22 stack uh this uh first uh during the
+23:25 execution phase first line of code the
+23:27 code executes line by line. This first
+23:30 line is executed and this is printed and
+23:33 then it is popped out of the call stack.
+23:35 Then we come for the time set timeout.
+23:38 This is set timeout cannot be handled by
+23:40 the call stack. It is sent to the
+23:43 browser. Actually the web APIs handle
+23:45 this. There the timer starts and then it
+23:47 returns this call back into a task Q and
+23:51 instead of timeout if we have a promise
+23:54 then it returns this call back to the
+23:56 microtask Q. And this microtask Q has
+23:59 priority over the task Q. Uh the event
+24:02 loop is like it's it's like a traffic uh
+24:05 controller whose job is to pick the
+24:07 items in the microtask Q and task Q.
+24:09 First it will check it will check for
+24:11 the microtask Q. It will pick up the
+24:13 items and send it to call stack for
+24:14 execution. When the micro task Q is
+24:18 empty then only it will go for task Q
+24:20 which is the call stack uh sorry uh call
+24:23 back Q. uh it will pick the items from
+24:25 there and then it will send it to the
+24:26 call stack and u it will execute those
+24:29 things.
+24:30 >> Okay. So task Q and call stack are uh
+24:35 different.
+24:37 >> Uh task Q and call stack are different.
+24:41 >> Yeah. Yeah. It is different. It is
+24:42 different. Since web API handles this
+24:46 timer events and promise events
+24:47 asynchronous operations, it cannot
+24:49 directly send it to the call stack. uh
+24:52 it will send this uh call backs to the
+24:55 uh call back Q which is the task Q and
+24:57 the micro task Q event loop will event
+25:00 loop will pick up this items and send it
+25:02 to the call stack for execution. If in
+25:04 case event loop is uh blank only having
+25:08 one function uh it's asyn function. So
+25:12 still having all the flow are doing or
+25:15 it is easily capture event loop itself
+25:19 in a task itself.
+25:23 So process are same for every
+25:25 asynchronous function
+25:27 >> only if we have asynchronous operation
+25:30 >> uh in the call stack it call stack won't
+25:33 be able to execute this it will send it
+25:35 to the this uh browser and then it comes
+25:39 back to the call back cube from there
+25:41 event loop picks up and then it sends it
+25:43 sends it to the call stag this is the
+25:46 reason uh this timers whatever we have
+25:48 in JavaScript are not accurate exactly
+25:51 >> because if we have some code running in
+25:52 the call stack it will wait for them to
+25:55 complete and then send this events.
+25:58 >> Okay. You said browser if we have NodeJS
+26:02 NodeJS doesn't have any browser.
+26:04 >> So what do you think how how it is
+26:07 sended
+26:08 >> in that case?
+26:12 Uh in that case
+26:15 um unfortunately we will not be able to
+26:18 run this in the NodeJS whatever browser
+26:21 functions we have it will point to the
+26:25 window object since NodeJS is a runtime
+26:27 environment we won't be able to run this
+26:30 functions
+26:31 >> actually NodeJS having a global
+26:33 environment itself so they can handle it
+26:37 >> okay
+26:38 >> okay no problem that is out of scope in
+26:41 this interview. What is the uh uh
+26:44 difference between shallow copy and deep
+26:45 copy?
+26:46 >> Copy and deep copy. They are used to
+26:48 copy the objects. Uh
+26:51 when we do a shallow copy, it copies the
+26:54 top level level elements only. Suppose
+26:57 we have a nested structure in an object.
+26:59 An object it contains another object
+27:02 then it only copies the references of
+27:05 those nested structure. So any change
+27:07 made in the shallow copy it will also
+27:10 reflect in the original object. But
+27:13 whereas in deep copy it is uh it clones
+27:16 the whole object. It uh doesn't like
+27:20 does it like a shallow copy. It clones
+27:22 the whole object and even if there are
+27:25 nested objects everything is copied. Uh
+27:28 shallow copy can be done using this uh
+27:30 uh rest operator object do assign. Deep
+27:33 copy we can use JSON.parse pass in JSON
+27:36 dot string fine and pass in the answer.
+27:38 >> What about the spread operator? Spread
+27:40 operator is used which one deep copy or
+27:43 shallow copy operate it is in the
+27:46 shallow copy.
+27:48 >> Okay. Okay. Got it. Uh okay. Let me ask
+27:52 uh some
+27:56 output B for cell. So just give me one
+27:58 second. I'll just copy it and paste to
+28:00 you.
+28:02 Okay.
+28:06 Okay.
+28:08 What's the output of this?
+28:25 1 + 2 + 2. This is I think string
+28:30 concatenation. photo just to the output.
+28:36 This one
+28:41 this one
+28:43 the same thing
+28:48 about uh not sure about the third one. I
+28:53 think it will print according to the
+28:55 precedence.
+28:57 >> Okay, first one is correct. Second one
+29:00 is double plus. Double plus is
+29:03 calculated as a plus itself. They
+29:06 convert second string to the number.
+29:08 Then 32. And the third one is 02. Okay.
+29:13 The third one is 02 because the plus
+29:15 minus is also converted as a minus. So 1
+29:18 - 1 is zero and then to itself.
+29:23 >> Yeah, that is you can run it if you
+29:25 want. If you run button is there.
+29:29 Okay, it's there. Okay, let me ask one
+29:34 more question to you.
+29:45 What is it? What's the output?
+30:02 =
+30:07 row I guess and
+30:12 this will also print
+30:17 this one
+30:22 this will print false.
+30:24 Okay, first one is true is correct.
+30:27 Second one is false because both the
+30:29 object having different different
+30:32 reference error
+30:34 and uh
+30:34 >> okay their references will be different.
+30:36 So yeah so it will print false.
+30:40 >> Yes. And the third one is uh true.
+30:46 >> Oh
+30:46 >> yes. Okay. Uh
+30:50 >> conversion.
+30:51 >> Yes. Type.
+30:53 Okay. Uh one more question I have.
+30:59 Okay.
+31:03 What's the output of this sensor log?
+31:22 and use for b =
+31:26 x = 2.
+31:29 So this one will connect.
+31:34 >> Yes, that is very simple. Correct. Uh
+31:37 one more I have saved to you. Just check
+31:40 it out.
+31:44 We have a set time mode just
+31:46 console.log.resolve
+31:51 then console.log B console.log C. Okay.
+31:55 The output will be first we'll have C
+31:59 then
+32:01 >> and this question will clear all your
+32:03 doubt regarding event loops synchronous
+32:06 micro task all
+32:10 >> okay
+32:12 B
+32:16 >> Mhm.
+32:22 Yes, that that one is correct. Okay, one
+32:26 more question I have. I just paste it.
+32:30 That is correct.
+33:03 Okay, you can run and check. No problem.
+33:07 It's hello.
+33:09 Okay, last question. Uh, I have
+33:25 same thing. I think same question.
+33:29 >> Okay. It's same question. Okay.
+33:33 Return statement. Return statement is
+33:36 different.
+33:36 >> Yeah, it's not same.
+33:39 Oh, wait.
+33:41 I got confused.
+33:43 [Music]
+33:46 This will also print hello.
+33:48 >> No, that is undefined.
+33:51 You can
+33:55 Okay, no problem. Uh then uh we will
+33:58 move to the logical one. Uh if you have
+34:01 >> this is the concept behind this. This is
+34:02 the scope only, right?
+34:04 >> Yes.
+34:04 >> The scope.
+34:06 >> Yeah. Uh the logical question we will
+34:09 start now. So uh you have one string for
+34:14 example hello. So I want to reverse that
+34:18 string. What's the logic you are uh
+34:20 thinking and how how you will do it.
+34:27 >> We have a string right?
+34:29 >> One string.
+34:33 Hello. We can
+34:38 >> just uh strateg
+34:48 [Music]
+35:09 Still not
+35:11 [Music]
+35:28 very powerful.
+36:02 It has option right?
+36:06 Yeah, you can you can do it. You can put
+36:10 in function. I want to know I want
+36:12 output in console.
+36:15 Okay.
+37:03 How do you get a string argument?
+37:08 >> String argument is a string.
+37:12 Can directly pass the string. We can
+37:15 directly pass or we can just uh
+37:21 You can just declare it or just pass the
+37:24 string. Yes.
+37:25 >> Hello here.
+37:29 This one reverse. Yes.
+37:33 Correct. Okay. Uh if you have a string I
+37:38 want to know how uh the occurrence of
+37:40 each character. code means uh A is
+37:43 coming one time, L is coming two time,
+37:47 B is coming zero time like this. How do
+37:50 you do?
+37:56 >> Occurrence of each characters in a
+37:58 string.
+38:02 >> I'm not sure on this.
+38:04 >> Okay, no problem. Oh okay. If you have
+38:06 any function okay no if you have any
+38:09 variable
+38:11 uh any x variable is equal to uh array
+38:16 you can write it first.
+38:18 >> Please write down
+38:22 any variable you can name name it
+38:26 >> okay. Uh array within array one
+38:30 comma
+38:31 again array again array
+38:35 one
+38:35 >> okay two comma
+38:38 again array
+38:41 >> three three
+38:43 I want uh the output in flatten flatten
+38:46 means 1 2 3 itself single array
+38:50 >> how do you think how do you do it
+38:55 flat uh nested array
+38:57 Uh this is the next
+38:58 >> this flat
+39:00 >> I want to convert
+39:01 >> flat method right
+39:03 >> no no don't use flat method otherwise uh
+39:05 without flat method how do you do it
+39:07 that is very much simple
+39:09 >> okay
+39:11 uh you have an array
+39:16 method
+39:18 [Music]
+39:24 not sure on the loop I think we can run
+39:26 a loop. I was knowing about the flat
+39:28 method.
+39:29 >> Mhm. No, no, flat is okay. I know. Okay,
+39:31 that's fine. Uh just give me one second.
+39:35 >> Okay, let's move to the React part. Uh
+39:38 what's the difference between class and
+39:40 function component? That is simple one.
+39:42 I know you don't know about the class
+39:44 component. That's why I started this.
+39:48 >> So class components are like this ES6.
+39:52 This uh these are classes which extend
+39:56 this react dot component and this use
+39:59 render method to return JSX
+40:01 >> whereas uh comp functional components
+40:04 are like simple JavaScript functions
+40:06 that takes props as an argument and
+40:08 return JSX.
+40:09 >> Okay. So you know uh class component in
+40:12 ES uh ES5 method
+40:18 >> you know
+40:19 >> not much having knowledge on class
+40:21 components.
+40:22 >> Okay. ES uh class component in ES5 and
+40:25 functional component is why why
+40:27 functional component is much more
+40:29 popular as of now my question is like
+40:32 this.
+40:34 >> Yeah. Yeah. So in functional components
+40:36 uh the boiler plate code is lesser and
+40:39 then we can also manage state and life
+40:42 cycle methods using hooks which were
+40:45 introduced in React 16. So that is why
+40:48 functional components are more popular.
+40:51 Okay.
+40:52 >> Simple and easy to maintain and
+40:54 readable.
+40:55 >> Yes, correct. Uh okay, that's correct,
+40:57 man. Uh what's the React Fiber? Have you
+41:01 heard about this one? React fiber.
+41:05 >> Yeah, I have uh heard about it like it u
+41:09 what it does it uh when sending the
+41:12 updates through to the DOM, it doesn't
+41:14 send uh the whole updates, whole set of
+41:17 changes. It sends it batch wise. Uh this
+41:20 is what I've heard of.
+41:22 >> Uh it's a part of uh reconciliation.
+41:27 >> Yes, no problem. Uh that is very much uh
+41:30 tough. Okay. What are the control and
+41:33 uncontrol component?
+41:36 Yeah, control components are like it is
+41:38 a form input element uh whose value is
+41:41 controlled by react state whereas in
+41:44 uncontrolled the value it is a form
+41:46 input element value can be controlled by
+41:49 the DOM directly using uh this userf.
+41:53 >> Okay, without a user f how do you do it
+41:56 uh in control component?
+42:02 Not sure maybe.
+42:05 No, I'm not sure how we can achieve
+42:07 this.
+42:08 >> Okay. No, sure. Let me move to the next
+42:10 one.
+42:11 >> Uh explain React hooks. Uh like uh any
+42:15 two three hooks I need to know. Key.
+42:17 Please explain these.
+42:19 You can uh stop sharing if you want.
+42:22 Yeah.
+42:22 >> Yeah. Yeah. That's what I
+42:24 >> Yeah. Uh I want uh two three hooks. You
+42:27 need to explain. I want to know how you
+42:30 relate able to hooks.
+42:32 >> Okay. Okay.
+42:33 >> Hooks like it were introduced in React
+42:36 16.8 I think. So they are they allows
+42:40 they allows us to manage state and life
+42:42 cycle methods inside functional
+42:44 components. Uh some of the hooks which I
+42:47 have used are like use state, use
+42:49 effect, then we have use context. Uh
+42:52 then we have use memo, use call back,
+42:55 then we have use ref. These are some few
+42:58 hooks. A use state is like we we can
+43:01 manage the state using this use state.
+43:04 Uh this state value is like uh it
+43:07 doesn't uh it persist across rerenders.
+43:10 So this is uh used for state management
+43:13 or use effect uh for running the side
+43:15 effects. Uh suppose like uh data
+43:18 fetching and uh DOM manipulation for use
+43:22 effect and use context. It is like uh
+43:25 use context hook is used to consume the
+43:27 context values for global data sharing.
+43:30 We can create a context with the help of
+43:32 this create context method and then use
+43:35 context we can consume this global
+43:37 context.
+43:39 >> Okay. Uh what's the difference uh
+43:41 between use effect and use layout
+43:43 effect.
+43:46 >> Uh use effect uh is uh like we use for
+43:50 data fetching. This is to run side
+43:51 effects. Use layout effect is also
+43:54 similar to use effect but it I guess it
+43:57 runs synchronously and it uh runs the
+44:01 side effects after the DOM is uh updated
+44:04 but before the browser is painted before
+44:08 the UI is there.
+44:10 >> Yes, correct. And uh uh how the use uh
+44:14 how the use of use memo use call back
+44:17 and use rep.
+44:20 >> Yeah. uh use memo we can use for
+44:23 memorizing computed values like suppose
+44:26 we have expensive calculations uh which
+44:29 uh do not need to be recalculated
+44:31 between rer renders we can memorize this
+44:34 and pass in a dependency array this will
+44:36 not recalculate this calculations are
+44:39 not done again and again between rer
+44:41 renders unless the dependency uh value
+44:43 is changed uh for use call back we
+44:48 actually used for memorizing functions
+44:50 these are used to memorize functions so
+44:52 that for every rerender we don't need to
+44:55 recreate the instance of the function.
+44:57 We can use the same instance. So it will
+45:00 uh actually um it will not recalculate
+45:04 like uh rec create the instance unless
+45:07 the dependency anything in the
+45:09 dependency array changes. Whereas user
+45:12 ref is like it provides us a a mutable
+45:15 object which uh will persist across the
+45:19 renders.
+45:20 Yes,
+45:22 >> that is correct.
+45:24 >> So,
+45:25 what's the difference between context
+45:27 API and Redux?
+45:31 >> API and Redux. Context API is a like a
+45:33 built-in feature. It comes along with
+45:35 the React. We don't need to install any
+45:38 uh library third party library. We we
+45:40 can just import create context and use
+45:43 context from React and use it for uh
+45:45 state management globally. And then
+45:48 context API uh this Redux is a third
+45:51 party library uh which we need to
+45:53 install it from the uh npm packages and
+45:56 we can uh we have a boilerplate code in
+45:59 code in redux we use this to set up the
+46:02 redux store actions and red users all
+46:05 these things.
+46:06 >> Okay. So why we use uh redux and why we
+46:11 not use context API?
+46:13 Mhm. So context API is suitable for
+46:17 simple applications. Suppose u in one of
+46:21 my project I used context API where we
+46:24 had just had to have a theme of our
+46:27 application dark mode light mode
+46:28 switching between modes. So we needed
+46:30 this context across various components.
+46:33 So there I have used context API but
+46:36 redux is used for more like more complex
+46:39 applications larger applications. there
+46:41 uh it will be easier for global state
+46:43 management if you use the redux.
+46:46 >> Yes. Uh what are the react keys? Have
+46:50 you used react keys?
+46:53 >> Yeah.
+46:55 >> Why are they important?
+46:58 >> Yeah, they are very important because
+47:00 they are uh used for identifying uh they
+47:03 are the unique uh ids. First of all, key
+47:05 is a unique id. They are used to
+47:07 identify which element of the list have
+47:09 been changed, added or anything is
+47:12 removed. This helps in the efficient uh
+47:15 calculation in the diffing during the
+47:17 reconciliation process.
+47:21 >> Yes.
+47:23 Uh what what is code splitting and lazy
+47:25 loading rate?
+47:28 >> Oh, this two techniques are used for
+47:30 performance optimization. Actually code
+47:32 splitting we do it uh using this uh uh
+47:36 react.lazy component from react. We
+47:38 import the heavy component. Suppose a
+47:41 data heavy component we have. We import
+47:44 this data heavy component in the with
+47:46 the help of react lazy and then uh
+47:49 render this component with the help of
+47:51 with wrapping this suspense method
+47:53 actually suspense and then we can
+47:55 provide a fallback UI also a simple div
+47:59 loading loading div can be provided to.
+48:02 >> Yes. Right. And how do you handle uh
+48:05 error boundaries in react?
+48:08 boundaries.
+48:11 Uh this uh if we are using async we can
+48:14 have handle it using try catch and dot
+48:17 catch method. If it is a dot then dot
+48:20 catch method we are using then promises
+48:22 we can use catch and then try catches.
+48:24 >> No no error boundary is something
+48:26 different. Uh in class component we have
+48:29 error boundaries uh is applicable in
+48:32 class itself. In function we don't have
+48:34 any like hooks as of now. So have you
+48:39 have you know about error boundaries or
+48:41 not? What is it?
+48:44 >> Actually error boundary third party
+48:46 third party
+48:48 >> installer is also available in error
+48:49 boundaries that we can install and use
+48:51 it in our application. No problem. Then
+48:54 uh we have one question uh okay react
+48:58 question I have. I want to know the
+49:00 output of that one.
+49:04 You can you can check uh if you want you
+49:07 can share your screen
+49:11 >> share my screen.
+49:12 >> Mhm. Just share.
+49:17 What's the output?
+49:18 >> We have a simple component
+49:21 registrate
+49:26 set count
+49:29 here.
+49:34 So every time it rerenders it increases
+49:36 the count value and displays it. Okay.
+49:39 For first time it will just uh uh print
+49:43 uh like this one um one as as one
+49:49 >> actually it's infinite uh uh rendering
+49:54 uh because of there is state update or
+49:56 every render
+49:59 >> that is
+49:59 >> yeah yeah we don't have any condition
+50:01 every rerender it will keep on
+50:03 increasing the count
+50:06 >> okay one more question to to
+50:25 So once the app is loaded, it will just
+50:29 uh uh set this uh count value to 10 and
+50:33 display it as 10. So between renders the
+50:36 value stays the same because we have
+50:38 empty dependency array.
+50:41 >> Are you sure it will tell rerender it's
+50:44 render 10?
+50:48 >> Yeah yeah
+50:48 >> what about zero
+50:52 use state react dot use state zero.
+50:58 Yeah, that is the default value. That is
+51:01 the initial value. Once uh we are
+51:03 updating it will just uh
+51:07 within use effect I will put dependency
+51:10 zero
+51:10 >> within use effect. Sorry
+51:13 >> dependency is blank.
+51:15 So it's it's which state uh that is like
+51:19 in component life cycle which state they
+51:22 are following here.
+51:25 So the component uh did update
+51:30 >> mounting. No.
+51:33 >> Yeah. When the component this uh app is
+51:36 loaded.
+51:37 >> So before it is loaded it uh this
+51:39 component uh will component did mount is
+51:43 uh this this is
+51:46 uh actually initially it solves zero and
+51:49 then it's mounted to 10. The both the
+51:52 value is displayed.
+51:54 Okay.
+51:55 >> Okay. No problem. Uh I have one more
+51:58 last question. Uh how do you uh optimize
+52:04 your code if you have thousand of API
+52:07 data?
+52:09 So how do you handle it
+52:12 simply in front end?
+52:15 In front end we can uh actually do this
+52:18 uh pagination
+52:20 uh and also we can implement uh scroll
+52:23 to load this infinite scrolling and also
+52:26 we can use make use of this technique
+52:28 called virtualization we have libraries
+52:32 react virtualization or react window we
+52:34 can make use of these techniques and
+52:37 handle this large amount of data.
+52:39 >> Yes correct. Okay, the interview is
+52:42 done. Now, uh I will give you some
+52:44 feedback. Uh uh first of all, you need
+52:48 to work on your réumé itself. Rumé, you
+52:50 need to just improve that réumé word. I
+52:53 will share you after this call, I will
+52:55 share you the rumé link where you can
+52:57 build your resume. And second uh output
+53:01 is like you need to improve your uh
+53:04 logical skill. Logical skill uh
+53:07 definitely you need to work. uh you just
+53:10 uh uh you just target it to firstly
+53:14 create account to le code le code create
+53:16 account then uh revise two three
+53:18 question daily then only your logical
+53:21 skill is uh
+53:22 >> uh improve better
+53:25 >> uh after one month it will take one
+53:26 month to improve the logical
+53:28 >> yeah definitely
+53:29 >> yeah that is the second thing
+53:31 >> just start like working with the
+53:35 organization right like not getting much
+53:37 time to practice these So
+53:39 >> it will not take more than 10 to 15
+53:42 minute. Just create just create a lead
+53:45 code account and then start with easy to
+53:48 hard that motive you can
+53:51 >> okay thing is there and just the
+53:54 theoretical you are okay in react
+53:56 theoretical uh HTML HTML CSS your is
+53:59 very good according to me uh we don't
+54:03 you don't have any issue HTML CSS just
+54:06 brush up JavaScript logical thing and
+54:09 react more deeply goes to the react
+54:12 Uh you mean uh just uh write it out.
+54:15 React 19 version is there. Learn React
+54:18 19 version if it is uh you have time. So
+54:20 you can start exploring my React 19
+54:23 series. I have already uploaded in re
+54:26 YouTube and freely available and I have
+54:28 also create uh Redux uh uh series also
+54:32 in my YouTube channel. So that will
+54:34 create a help to you very much otherwise
+54:38 uh you are okay according to as you have
+54:40 three year experience within three year
+54:42 experience just focused more on uh our
+54:45 GitHub repository portfolio also you
+54:48 know in future portfolio is very much
+54:52 needed if if someone have good portfolio
+54:55 then only they will get a job in future
+54:59 >> yeah that you need to work itself that's
+55:01 uh that's why I'm asking Okay. Everyone
+55:04 need to be check uh everyone hire
+55:07 >> perfect person in company.
+55:10 >> That's
+55:12 okay. Otherwise everything looks good uh
+55:15 uh for me. Okay. Okay. Alam thanks.
+55:19 Thank you for joining.
+55:21 >> Yeah. Yeah. Very thank you for this like
+55:23 having this session with me.
